@@ -9,7 +9,7 @@ html, body, #root {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  --nav-bar-height: 70px;
+  --nav-bar-height: 65px;
   --skill-tree-color-opacity: 0.4;
 
   --project-page-dividing-text-size: 40%;
