@@ -74,7 +74,7 @@ a:hover {
   width: 100%;
   justify-content: center;
   align-items: space-evenly;
-  flex-direction: column;
+  flex-direction: row;
   opacity: 0;
   animation: slide-in-top 1s ease-out 0.5s forwards;
 }
@@ -120,6 +120,17 @@ a:hover {
   padding-left: 15px;
 }
 
+/*Specific html classes for index html*/
+.index-half-divider {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+
 
 /*Projects html Classes:*/
 
@@ -160,6 +171,8 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  padding: 100px;
 }
 
 .page-quarter-text-bottom {
