@@ -49,6 +49,7 @@ a:hover {
 .half-headline-div-left {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
   width: 35%;
   animation: fade-in-left 1.2s ease-out forwards;
@@ -99,7 +100,7 @@ a:hover {
 }
 .nav-item:hover {
   letter-spacing: 3px;
-  border-width: 2px;
+  border-width: 1px;
   background-color: rgba(255, 255, 255, 0.05);
   box-sizing: border-box;
   box-shadow: 0px 0px 35px rgba(255, 255, 255, 0.1);
@@ -119,13 +120,18 @@ a:hover {
 }
 
 .name-text {
-  margin-left: 150px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 25px;
   transition: 0.5s;
+  box-sizing: border-box;
   cursor: pointer;
 }
 
 .name-text:hover {
   color: var(--primary-color);
+  letter-spacing: 2px;
 }
 
 .footer-text {
@@ -187,7 +193,7 @@ a:hover {
 }
 
 .highlighted-text-headline:hover {
-  font-size: 70px;
+  font-size: 60px;
   box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.6);
   background-color: rgba(0, 0, 0, 0.1);
   border-width: 5px;
