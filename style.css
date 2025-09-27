@@ -23,12 +23,15 @@ html, body, #root {
 
 
 a {
-    color: var(--accent-color);
+    display: inline-block;
+    width: auto;
+    color: var(--secondary-color);
     transition: 0.3s;
     cursor: pointer;
+    text-decoration: none;
 }
 a:hover {
-    color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 .headline-div {
@@ -82,7 +85,7 @@ a:hover {
 }
 
 .nav-item {
-  font-size: 20px;
+  font-size: 25px;
   transition: 0.5s;
   text-decoration: none;
   color: var(--text-color) !important;
