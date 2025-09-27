@@ -35,8 +35,8 @@ a:hover {
     height: var(--nav-bar-height);
     padding: 0px;
     margin: 0px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-bottom: 2px dashed var(--unimportant-color) !important;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.5) !important;
 }
 
 .half-headline-div-left {
@@ -80,6 +80,7 @@ a:hover {
 .nav-item {
   font-size: 20px;
   transition: 0.5s;
+  text-decoration: none;
   color: var(--text-color) !important;
 }
 .nav-item:hover {
@@ -93,13 +94,12 @@ a:hover {
 
 .name-text {
   margin-left: 150px;
-  transition: 0.8s;
+  transition: 0.5s;
   cursor: pointer;
 }
 
 .name-text:hover {
   color: var(--primary-color);
-  box-shadow: 0px 0pc 50px rgba(0, 0, 100, 0.8);
 }
 
 .footer-text {
@@ -108,7 +108,7 @@ a:hover {
 
 .footer {
   display: flex;
-  height: 50px;
+  height: 40px;
   width: 100%;
   flex-direction: row;
   background-color: var(--background-color);
@@ -117,6 +117,9 @@ a:hover {
   box-sizing: border-box;
   padding-left: 15px;
 }
+
+
+/*Projects html Classes:*/
 
 
 @-webkit-keyframes slide-in-top {
