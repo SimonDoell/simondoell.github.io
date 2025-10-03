@@ -55,13 +55,11 @@
       <div class="page-quarter-text-bottom">
         <div class="page-quarter-text-bottom-description">
           <p class="description-text-headline"><b>Description:</b></p>
-          <p class="description-text">The amount of particles can be changed via a variable. Each particle gets added to a list</p>
-          <p class="description-text">and a loop updates the acceleration depending on the proximity of other particles.</p>
-          <p class="description-text">Performance is limited by single-core performance (i.e., only one CPU core gets used for all calculations, which is a common limitation for C++ code).</p>
-          <p class="description-text">Close particles get pushed away, while distant particles slightly attract each other.</p>
-          <p class="description-text">This gives semi-realistic wave behavior, which also gets repelled by the walls.</p>
-          <p class="description-text">SFML is only used for drawing and moving the shapes, not for any logic or calculations.</p>
-          <p class="description-text">The higher the speed, the brighter the particles are.</p>
+          <p class="description-text">The number of particles is controlled via a variable. Each particle is stored in a list, and a loop updates their acceleration based on their proximity to other particles.</p>
+          <p class="description-text">The simulation runs on a single CPU core, which limits performance—a common constraint in C++ programs.</p>
+          <p class="description-text">Particles that are too close repel each other, while those farther apart exert a slight attraction. This interaction creates semi-realistic wave-like motion that also reflects off the boundaries.</p>
+          <p class="description-text">SFML is used only for rendering and movement, it does not handle any simulation logic or calculations.</p>
+          <p class="description-text">Particle brightness increases with speed.</p>
         </div>
         <div class="page-quarter-text-bottom-stats">
           <a target="_blank" href="https://github.com/SimonDoell/Water-Simulation-Cpp">Go to Source Code <i>(Open in new Tab)</i></a>
@@ -84,11 +82,11 @@
       <div class="page-quarter-text-bottom">
         <div class="page-quarter-text-bottom-description">
           <p class="description-text-headline"><b>Description:</b></p>
-          <p class="description-text">This is a 2D gravity simulation using 2 lists for the objects emitting gravitational force (colored blue) and the ones attracted by it (colored white).</p>
-          <p class="description-text">Limited by single-core performance. Can simulate about 15000 objects with smooth performance.</p>
-          <p class="description-text">Best on the real inverse square algorithm for calculating the strength of attraction.</p>
-          <p class="description-text">When objects hit an object emitting a gravitational pull, they get deleted from the list.</p>
-          <p class="description-text">The objects affected by gravity do not in any way interact with each other.</p>
+            <p class="description-text">This is a 2D gravity simulation that uses two separate lists: one for objects that emit gravitational forces (displayed in blue), and another for objects that are affected by gravity (displayed in white).</p>
+            <p class="description-text">Performance is limited by single-core processing, but the simulation can handle up to 15,000 objects smoothly.</p>
+            <p class="description-text">Gravity is calculated using the true inverse-square law for realistic force simulation.</p>
+            <p class="description-text">Objects are removed from the simulation when they collide with a gravity-emitting object.</p>
+            <p class="description-text">Objects influenced by gravity do not interact with each other in any way.</p>
         </div>
         <div class="page-quarter-text-bottom-stats">
           <a target="_blank" href="https://github.com/SimonDoell/Planet-Simulation-Cpp">Go to Source Code <i>(Open in new Tab)</i></a>
