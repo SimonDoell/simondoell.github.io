@@ -38,12 +38,21 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 90%;
+    border-radius: 35px;
     height: var(--nav-bar-height);
     padding: 0px;
     margin: 0px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-bottom: 2px dashed rgba(0, 0, 0, 0.5) !important;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 15px;
+    left: calc(100vw - 95vw);
+    z-index: 100;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: inset 0px 5px 5px rgba(255, 255, 255, 0.05), 0px 3px 13px rgba(0, 0, 0, 0.3);
 }
 
 .half-headline-div-left {
@@ -385,32 +394,36 @@ a:hover {
   border-radius: 25px;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.2);
-  border-width: 3px;
+  border-width: 1px;
   transition: 0.2s;
 }
 
+
 .skill-main-element-green:hover {
-  box-shadow: 0px 0px 25px rgba(0, 150, 0, var(--skill-tree-color-opacity));
-  border-color: rgba(0, 150, 0, var(--skill-tree-color-opacity));
+  box-shadow: inset 0px 1px 3px rgba(255, 255, 255, 0.08), 1px 4px 3px rgba(0, 0, 0, 0.4), 0px 0px 2px rgba(0, 0, 0, 0.3);
+  /*border-color: rgba(0, 0, 150, calc(var(--skill-tree-color-opacity) + 0.2));*/
   width: 60%;
   height: 150px;
-  border-width: 5px;
+  border-width: 1px;
+  background-color: rgba(0, 255, 0, 0.05);
 }
 
 .skill-main-element-red:hover {
-  box-shadow: 0px 0px 25px rgba(150, 0, 0, var(--skill-tree-color-opacity));
-  border-color: rgba(150, 0, 0, var(--skill-tree-color-opacity));
+  box-shadow: inset 0px 1px 3px rgba(255, 255, 255, 0.08), 1px 4px 3px rgba(0, 0, 0, 0.4), 0px 0px 2px rgba(0, 0, 0, 0.3);
+  /*border-color: rgba(0, 0, 150, calc(var(--skill-tree-color-opacity) + 0.2));*/
   width: 60%;
   height: 150px;
-  border-width: 5px;
+  border-width: 1px;
+  background-color: rgba(255, 0, 0, 0.05);
 }
 
 .skill-main-element-blue:hover {
-  box-shadow: 0px 0px 25px rgba(0, 0, 150, var(--skill-tree-color-opacity));
-  border-color: rgba(0, 0, 150, calc(var(--skill-tree-color-opacity) + 0.2));
+  box-shadow: inset 0px 1px 3px rgba(255, 255, 255, 0.08), 1px 4px 3px rgba(0, 0, 0, 0.4), 0px 0px 2px rgba(0, 0, 0, 0.3);
+  /*border-color: rgba(0, 0, 150, calc(var(--skill-tree-color-opacity) + 0.2));*/
   width: 60%;
   height: 150px;
-  border-width: 5px;
+  border-width: 1px;
+  background-color: rgba(0, 0, 255, 0.05);
 }
 
 .skill-main-element-head {
