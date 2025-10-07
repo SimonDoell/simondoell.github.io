@@ -228,6 +228,7 @@ a:hover {
 /*Projects html Classes:*/
 
 .website-filler-projects {
+  content-visibility: auto;
   display: flex;
   height: calc(min(100vh, 1000px) - var(--nav-bar-height));
   width: calc(100%-15px);
