@@ -20,7 +20,7 @@ html, body, #root {
   background-color: var(--background-color);
   color: var(--text-color);
 
-  scrollbar-width: none;
+  scrollbar-width: thin;
 }
 
 
