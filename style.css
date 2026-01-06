@@ -3,7 +3,7 @@ html, body, #root {
   --primary-color: rgb(47, 39, 206);
   --secondary-color: rgb(222, 220, 255);
   --accent-color: rgb(68, 61, 255);
-  --unimportant-color: rgb(105, 104, 106);
+  --unimportant-color: rgb(125, 124, 126);
   --important-color: rgb(255, 100, 100);
   --text-color: rgb(200, 200, 200);
   box-sizing: border-box;
@@ -43,7 +43,7 @@ a:hover {
   height: 40px;
   width: 100%;
   flex-direction: row;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.6);
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
