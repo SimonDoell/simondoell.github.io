@@ -7,7 +7,7 @@ html, body, #root {
   --important-color: ;
   --text-color: rgb(255, 255, 255);
   --link-color: blue;
-  --default-border-radius: 15px;
+  --default-border-radius: 10px;
   --default-blurring: blur(2px);
 
   box-sizing: border-box;
@@ -33,6 +33,11 @@ a {
 
 .nav-wrapper {
   display: flex;
+  flex-direction: row;
+  gap: 25px;
+  --paddint-l-r: 40px;
+  padding-left: var(--paddint-l-r);
+  padding-right: var(--paddint-l-r);
   align-items: center;
   min-height: 40px;
   position: fixed;
@@ -46,18 +51,36 @@ a {
   outline-style: solid;
 
   backdrop-filter: var(--default-blurring);
+
+  font-family: "Bebas Neue", sans-serif !important;
+  animation: fade-in-right 1.0s ease 0.0s 1 forwards normal;
 }
 
 .nav-wrapper a {
-  --spacing: 30px;
-  padding-left: var(--spacing);
-  padding-right: var(--spacing);
+  font-size: 16px;
+  letter-spacing: 2px;
   color: var(--text-color);
 }
 
 .nav-wrapper-active-a {
   color: rgb(150, 150, 150) !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -76,6 +99,8 @@ a {
 
 
 
+
+/* Animations and Entrances */
 @-webkit-keyframes fade-in-left {
   0% {
     -webkit-transform: translateX(-50px);
@@ -92,6 +117,30 @@ a {
   0% {
     -webkit-transform: translateX(-50px);
             transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
     opacity: 0;
   }
   100% {
