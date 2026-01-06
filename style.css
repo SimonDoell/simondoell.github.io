@@ -1,40 +1,64 @@
 html, body, #root {
-  --background-color: hsl(221, 45%, 20%);
-  --primary-color: rgb(47, 39, 206);
-  --secondary-color: rgb(222, 220, 255);
-  --accent-color: rgb(68, 61, 255);
-  --unimportant-color: rgb(125, 124, 126);
-  --important-color: rgb(255, 100, 100);
-  --text-color: rgb(200, 200, 200);
+  --background-color: rgb(33, 30, 30);
+  --primary-color: rgb(240, 93, 35);
+  --secondary-color: ;
+  --accent-color: ;
+  --unimportant-color: ;
+  --important-color: ;
+  --text-color: rgb(255, 255, 255);
+  --link-color: blue;
+  --default-border-radius: 15px;
+  --default-blurring: blur(2px);
+
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  --nav-bar-height: 65px;
-  --skill-tree-color-opacity: 0.4;
-
-  --project-page-dividing-text-size: 40%;
-  --skills-headline-height: 100px;
-
 
   font-family: 'Roboto', system-ui, sans-serif;
   background-color: var(--background-color);
-  color: var(--text-color);
 
   scrollbar-width: thin;
 }
 
 
 a {
-    display: inline-block;
     width: auto;
-    color: var(--secondary-color);
+    color: var(--link-color);
     transition: 0.3s;
     cursor: pointer;
     text-decoration: none;
 }
-a:hover {
-    color: var(--accent-color);
+
+
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  position: fixed;
+  top: 2rem;
+  right: 8rem;
+  background-color: rgba(100, 100, 100, 0.6);
+  border-radius: var(--default-border-radius);
+
+  outline-color: rgb(150, 150, 150);
+  outline-width: 1px;
+  outline-style: solid;
+
+  backdrop-filter: var(--default-blurring);
 }
+
+.nav-wrapper a {
+  --spacing: 30px;
+  padding-left: var(--spacing);
+  padding-right: var(--spacing);
+  color: var(--text-color);
+}
+
+.nav-wrapper-active-a {
+  color: rgb(150, 150, 150) !important;
+}
+
 
 
 
