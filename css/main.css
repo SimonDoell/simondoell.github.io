@@ -12,14 +12,15 @@
 
 
 html, body, :root {
-  --background-color: hsl(0, 5%, 12%);
-  --bright-bg-color: hsl(0, 3%, 24%);
-  --bighter-bg-color: hsl(0, 1%, 40%);
-  --border-color: rgba(150, 150, 150, 255);
+  --bg-color: hsl(0, 3%, 12%);
+  --bright-bg: hsl(0, 2%, 24%);
+  --bighter-bg: hsl(0, 1%, 40%);
+  --border-color: hsl(0, 0%, 40%);
+  --navbar-border-color: hsl(0, 0%, 60%);
   --primary-color: hsl(0, 100%, 50%);
   --accent-color: hsl(24, 100%, 50%);
 
-  --text-color: rgb(255, 255, 255);
+  --text-color: hsl(0, 0%, 95%);
   --link-color: blue;
 
 
@@ -31,7 +32,7 @@ html, body, :root {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', system-ui, sans-serif;
-  background-color: var(--background-color);
+  background-color: var(--bg-color);
   scrollbar-width: thin;
 }
 
@@ -61,7 +62,7 @@ a {
   background-color: rgba(100, 100, 100, 0.6);
   border-radius: var(--default-border-radius);
 
-  outline-color: var(--border-color);
+  outline-color: var(--navbar-border-color);
   outline-width: 1px;
   outline-style: solid;
 
@@ -69,7 +70,7 @@ a {
   font-family: "Bebas Neue", sans-serif !important;
 
   box-shadow: 
-    inset 5px 5px 10px hsla(0, 0%, 50%, 50%), 
+    inset 3px 5px 10px hsla(0, 0%, 50%, 50%), 
     3px 3px 7px hsla(0, 0%, 20%, 50%);
 }
 
