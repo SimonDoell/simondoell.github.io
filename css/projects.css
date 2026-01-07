@@ -1,0 +1,27 @@
+@import "./main.css";
+
+:root {
+    --top-offset: calc(var(--top-navbar-offset) + var(--min-nav-height));
+}
+
+
+.project-wrapper {
+    display: flex;
+    height: calc(100vh - var(--top-offset));
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.first-project-wrapper {
+    margin-top: var(--top-offset);
+}
+
+.project-wrapper-box {
+    width: 80%;
+    height: 90%;
+    background-color: var(--bright-bg-color);
+
+    border-radius: var(--default-border-radius);
+}

@@ -1,22 +1,37 @@
-html, body, #root {
-  --background-color: rgb(33, 30, 30);
-  --primary-color: rgb(240, 93, 35);
-  --secondary-color: ;
-  --accent-color: ;
-  --unimportant-color: ;
-  --important-color: ;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Fonts: 
+  -font-family: "Oswald", sans-serif;
+  -font-family: "Roboto", sans-serif;
+  -font-family: "Bebas Neue", sans-serif;
+  -font-family: "Doto", sans-serif;
+*/
+
+
+html, body, :root {
+  --background-color: hsl(0, 5%, 12%);
+  --bright-bg-color: hsl(0, 3%, 24%);
+  --bighter-bg-color: hsl(0, 1%, 40%);
+  --border-color: rgba(150, 150, 150, 255);
+  --primary-color: hsl(0, 100%, 50%);
+  --accent-color: hsl(24, 100%, 50%);
+
   --text-color: rgb(255, 255, 255);
   --link-color: blue;
+
+
   --default-border-radius: 8px;
   --default-blurring: blur(2px);
-
+  --top-navbar-offset: 1.5rem;
+  --min-nav-height: 40px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
   font-family: 'Roboto', system-ui, sans-serif;
   background-color: var(--background-color);
-
   scrollbar-width: thin;
 }
 
@@ -39,20 +54,23 @@ a {
   padding-left: var(--paddint-l-r);
   padding-right: var(--paddint-l-r);
   align-items: center;
-  min-height: 40px;
+  min-height: var(--min-nav-height);
   position: fixed;
-  top: 1.5rem;
-  right: 8rem;
+  top: var(--top-navbar-offset);
+  left: calc(100vw - 38rem);
   background-color: rgba(100, 100, 100, 0.6);
   border-radius: var(--default-border-radius);
 
-  outline-color: rgb(150, 150, 150);
+  outline-color: var(--border-color);
   outline-width: 1px;
   outline-style: solid;
 
   backdrop-filter: var(--default-blurring);
-
   font-family: "Bebas Neue", sans-serif !important;
+
+  box-shadow: 
+    inset 5px 5px 10px hsla(0, 0%, 50%, 50%), 
+    3px 3px 7px hsla(0, 0%, 20%, 50%);
 }
 
 .nav-wrapper a {
@@ -60,11 +78,11 @@ a {
   letter-spacing: 2px;
   color: var(--text-color);
 
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
 .nav-wrapper a:hover {
-  color: red;
+  color: var(--accent-color);
 }
 
 .nav-wrapper-active-a {
@@ -74,16 +92,7 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
+/*
 .footer {
   display: flex;
   height: 40px;
@@ -95,19 +104,14 @@ a {
   box-sizing: border-box;
   padding-left: 15px;
 }
-
-
-
+*/
 
 
 
 /* Improvements:
   -Interactive background
-  -Add shadow to Navbar
+  -? Add shadow to Navbar
 */
-
-
-
 
 
 
